@@ -14,7 +14,7 @@ class JWT {
 	}
 
 	verify (token, cb) {
-		jsonwebtoken.verify(token, this[__secret], cb);
+		return jsonwebtoken.verify(token, this[__secret], cb);
 	}
 }
 
